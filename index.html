@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+  </style>
+</head>
+<body>
+
+  <div class="under">
+    <nav class="navbar">
+      <div class="logoDiv">
+        <img src="./images/logo.svg" class="logo">
+  
+        <ul class="links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="cart" id="cartIcon">
+        <img src="./images/icon-cart.svg">
+        <p id="counter">0</p>
+        <img src="./images/image-avatar.png" class="avatar">
+        
+      </div>
+    </nav>
+  
+  
+    <main>
+      <div class="left">
+        <div class="preview">
+          <img src="./images/image-product-1.jpg" id="preview">
+    
+        </div>
+        <div class="select">
+          <img src="./images/image-product-1-thumbnail.jpg" id="selection1" class="selection active">
+          <img src="./images/image-product-2-thumbnail.jpg" id="selection2" class="selection">
+          <img src="./images/image-product-3-thumbnail.jpg" id="selection3" class="selection">
+          <img src="./images/image-product-4-thumbnail.jpg" id="selection4" class="selection">
+        </div>
+      </div>
+  
+      <div class="right">
+        <p class="sneaker">Sneaker Company</p>
+        <h3>Fall Limited Edition Sneakers</h3>
+  
+        <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  
+        <div class="price">
+          <p>$125.00 <span>50%</span></p>
+          <p class="cancel">$250.00</p>
+        </div>
+  
+  
+        <div class="addCart">
+          <div class="cart">
+            <button id="minus">-</button>
+            <p id="item-quantity">0</p>
+            <button id="add">+</button>
+          </div>
+  
+          <button id="addToCart">
+            <svg style="margin-right: 1rem; height: 1.5rem;" width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="black" fill-rule="nonzero"/></svg>
+            Add to cart</button>
+        </div>
+  
+      </div>
+    </main>
+
+   
+    
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/neena-coder">Neena</a>.
+    </div>
+  </div>
+
+  <div class="carts" id="carts">
+    <h3>Cart</h3>
+
+    <div class="items" id="cartItems">
+      <img src="./images/image-product-1-thumbnail.jpg" id="itemImg">
+      <p>Fall limited Edition Sneakers </br>$125.00 x <span id="cartQuantity">0</span> <span id="total" style="font-weight: bolder;">0</span></p>
+      <img src="./images/icon-delete.svg" class="delete" id="clearCart">
+    </div>
+
+    <p id="noItem" style="margin: 1rem;">No item in cart</p>
+    <button id="checkout">Checkout</button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="buttons">
+      <img src="./images/icon-close.svg" class="close" id="close">
+
+      <div class="arrows">
+        <img src="./images/icon-previous.svg" id="previous">
+        <img src="./images/icon-next.svg" id="next">
+      </div>
+    </div>
+    <div class="preview">
+      <img src="./images/image-product-1.jpg" id="modalpreview">
+
+    </div>
+    <div class="select">
+      <img src="./images/image-product-1-thumbnail.jpg" id="modalselection1" class="selection active">
+      <img src="./images/image-product-2-thumbnail.jpg" id="modalselection2" class="selection">
+      <img src="./images/image-product-3-thumbnail.jpg" id="modalselection3" class="selection">
+      <img src="./images/image-product-4-thumbnail.jpg" id="modalselection4" class="selection">
+    </div>
+  </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
